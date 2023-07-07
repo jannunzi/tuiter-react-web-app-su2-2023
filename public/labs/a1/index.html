@@ -64,8 +64,210 @@
     <h2>Lists</h2>
     <h2>Links</h2>
     <h2>Images</h2>
-    <h2>Tables</h2>
+    <h2>Table Tag</h2>
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>Quiz</th>
+          <th>Topic</th>
+          <th>Date</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Q1</td>
+          <td>HTML</td>
+          <td>2/3/21</td>
+          <td>85</td>
+        </tr>
+        <tr>
+          <td>Q2</td>
+          <td>CSS</td>
+          <td>2/10/21</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Q3</td>
+          <td>JavaScript</td>
+          <td>2/17/21</td>
+          <td>95</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Average</td>
+          <td>90</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h3>Grades</h3>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th rowspan="2">Student Name</th>
+          <th>A1</th>
+          <th>A2</th>
+          <th>A3</th>
+          <th>A4</th>
+        </tr>
+        <tr>
+          <th>Out of 100</th>
+          <th>UNPUBLISHED</th>
+          <th>UNPUBLISHED</th>
+          <th>UNPUBLISHED</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>90</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Jane Doe</td>
+          <td>90</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>John Smith</td>
+          <td>90</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Average</td>
+          <td>90</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h3>Content Layout</h3>
+    <h4>Left, Main, Right</h4>
+    <table border="1" width="100%">
+      <tbody>
+        <tr>
+          <td width="20%">
+            Navigation
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </td>
+          <td>
+            <h4>Welcome</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. In sint
+              aliquam nobis cupiditate, dolores fuga assumenda, sed doloremque
+              sapiente commodi corrupti libero hic officia perferendis minima
+              recusandae porro! Ratione, minus.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+              dolorum deleniti beatae repellendus assumenda velit atque, in unde
+              saepe dolore minima, hic inventore commodi nam quibusdam dolor
+              explicabo eius placeat?
+            </p>
+          </td>
+          <td width="20%">Right</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4>North, East, Center, West, South</h4>
+    <table border="1" width="100%">
+      <tbody>
+        <tr>
+          <td colspan="3">Header</td>
+        </tr>
+        <tr>
+          <td width="20%">Navigation</td>
+          <td>Main content</td>
+          <td width="20%">Sidebar</td>
+        </tr>
+        <tr>
+          <td colspan="3">Footer</td>
+        </tr>
+      </tbody>
+    </table>
+
     <h2>Forms</h2>
+    <input
+      type="text"
+      placeholder="John Doe"
+      title="Please enter your name"
+      value="Jane Watson"
+    />
+
+    <h2>Text fields</h2>
+    <form id="text-fields">
+      <label for="text-fields-username">Username:</label>
+      <input id="text-fields-username" placeholder="jdoe" /><br />
+
+      <label for="text-fields-password">Password:</label>
+      <input
+        type="password"
+        id="text-fields-password"
+        value="123@#$asd"
+      /><br />
+
+      <label for="text-fields-first-name">First name:</label>
+      <input type="text" id="text-fields-first-name" title="John" /><br />
+      <label for="text-fields-last-name">Last name:</label>
+      <input
+        type="text"
+        id="text-fields-last-name"
+        placeholder="Doe"
+        value="Wonderland"
+      />
+
+      <h2>Other field types</h2>
+      <label for="text-fields-email"> Email: </label>
+      <input
+        type="email"
+        placeholder="jdoe@somewhere.com"
+        id="text-fields-email"
+      /><br />
+      <label for="text-fields-salary-start"> Starting salary: </label>
+      <input
+        type="number"
+        id="text-fields-salary-start"
+        placeholder="1000"
+        min="1000"
+        max="100000"
+        value="100000"
+      /><br />
+      <label for="text-fields-rating"> Rating: </label>
+      <input
+        type="range"
+        id="text-fields-rating"
+        placeholder="Doe"
+        max="5"
+        value="4"
+      /><br />
+      <label for="text-fields-dob"> Date of birth: </label>
+      <input
+        type="date"
+        min="2023-07-03"
+        max="2023-07-10"
+        id="text-fields-dob"
+        value="2023-07-06"
+      /><br />
+    </form>
+
     <h2>Divs</h2>
     <h2>Spans</h2>
   </body>
