@@ -1,57 +1,415 @@
 <html>
   <head>
+    <link rel="stylesheet" href="../../vendors/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <h1>CSS Labs</h1>
-    <h2>Float</h2>
-    <div>
-      <div class="float-left dimension-portrait bg-color-yellow">Yellow</div>
-      <div class="float-left dimension-portrait bg-color-blue fg-color-white">
-        Blue
-      </div>
-      <div class="float-left dimension-portrait bg-color-red">Red</div>
+    <div class="container-fluid">
+      <h1>Bootstrap Labs</h1>
 
-      <img
-        class="float-left"
-        width="50px"
-        src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"
-      />
-      <div class="float-done"></div>
+      <h2>Forms</h2>
 
-      <h2>Grid layout</h2>
-      <div class="grid-row">
-        <div class="grid-col-half-page bg-color-yellow">
-          <h3>Left half</h3>
-        </div>
-        <div class="grid-col-half-page bg-color-blue fg-color-white">
-          <h3>Right half</h3>
+      <h3>
+        <a
+          href="https://getbootstrap.com/docs/5.1/forms/layout/#horizontal-form"
+          >Responsive forms</a
+        >
+      </h3>
+      <div class="mb-3 row">
+        <label for="email1" class="col-sm-2 col-form-label"> Email</label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            class="form-control"
+            id="email1"
+            value="email@example.com"
+          />
         </div>
       </div>
-
-      <div class="grid-row">
-        <div class="grid-col-third-page bg-color-green fg-color-white">
-          <h3>Left third</h3>
-        </div>
-        <div class="grid-col-two-thirds-page bg-color-red fg-color-white">
-          <h3>Right two thirds</h3>
+      <div class="mb-3 row">
+        <label for="password1" class="col-sm-2 col-form-label"> Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="password1" />
         </div>
       </div>
-      <div class="grid-row">
-        <div class="grid-col-left-sidebar bg-color-yellow">
-          <h3>Side bar</h3>
-          <p>This is the left sidebar</p>
+      <div class="mb-3 row">
+        <label for="textarea1" class="col-sm-2 col-form-label"> Bio</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="textarea1" rows="3"></textarea>
         </div>
-        <div class="grid-col-main-content bg-color-blue fg-color-white">
-          <h3>Main content</h3>
-          <p>
-            This is the main content. This is the main content. This is the main
-            content.
-          </p>
+      </div>
+
+      Username:
+      <input class="mb-3 form-control" type="text" name="username" />
+      Password:
+      <input class="mb-3 form-control" type="password" name="password" />
+      First name:
+      <input class="mb-3 form-control" type="text" name="firstname" />
+      Last name:
+      <input class="mb-3 form-control" type="text" name="lastname" />
+      <button class="btn btn-primary" type="submit">Submit</button>
+      <button class="btn btn-secondary" type="reset">Reset</button>
+
+      <h2>Responsive Table</h2>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Student name</th>
+              <th>A1 HTML</th>
+              <th>A2 CSS</th>
+              <th>A3 JavaScript</th>
+              <th>A4 React</th>
+              <th>A5 Node</th>
+              <th>A6 Express</th>
+              <th>A7 MongoDB</th>
+              <th>A8 Mongoose</th>
+              <th>A9 Heroku</th>
+              <th>A10 Git</th>
+              <th>A11 GitHub</th>
+              <th>A12 REST</th>
+              <th>A13 GraphQL</th>
+              <th>A14 TypeScript</th>
+              <th>Quiz 1</th>
+              <th>Quiz 2</th>
+              <th>Quiz 3</th>
+              <th>Quiz 4</th>
+              <th>Quiz 5</th>
+              <th>Quiz 6</th>
+              <th>Exam 1</th>
+              <th>Exam 2</th>
+              <th>Exam 3</th>
+              <th>Exam 4</th>
+              <th>Project</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Student 1</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Student 1</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Student 1</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Student 1</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+              <td>100</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>Hiding content</h2>
+      <div class="row">
+        <div class="col-2 d-none d-md-block">
+          <div class="list-group">
+            <a class="list-group-item" href="#">Tuiter</a>
+            <a class="list-group-item" href="#">Facebuk</a>
+            <a class="list-group-item" href="#">Instagran</a>
+            <a class="list-group-item" href="#">TikTak</a>
+            <a class="list-group-item" href="#">Tinder</a>
+          </div>
         </div>
-        <div class="grid-col-right-sidebar bg-color-green fg-color-white">
-          <h3>Side bar</h3>
-          <p>This is the right sidebar</p>
+        <div class="col">
+          <div class="row mb-2">
+            <div class="col-10">
+              <input
+                class="rounded-pill form-control"
+                type="text"
+                placeholder="Search"
+              />
+            </div>
+            <div class="col-2">
+              <button class="btn btn-primary rounded-pill">Gear</button>
+            </div>
+          </div>
+          <ul class="mb-2 nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <div class="position-relative">
+            <img
+              width="100%"
+              src="https://cdn.geekwire.com/wp-content/uploads/2020/12/201210-spacex.jpg"
+            />
+            <h1
+              style="left: 10px; bottom: 10px"
+              class="position-absolute text-white"
+            >
+              Starship
+            </h1>
+          </div>
+        </div>
+        <div class="col-3 d-none d-xl-block">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col">image</div>
+                <div class="col">Text</div>
+                <div class="col">
+                  <button class="btn btn-primary rounded-pill">Follow</button>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col">image</div>
+                <div class="col">Text</div>
+                <div class="col">
+                  <button class="btn btn-primary rounded-pill">Follow</button>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col">image</div>
+                <div class="col">Text</div>
+                <div class="col">
+                  <button class="btn btn-primary rounded-pill">Follow</button>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col">image</div>
+                <div class="col">Text</div>
+                <div class="col">
+                  <button class="btn btn-primary rounded-pill">Follow</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Grid System</h2>
+
+      <h3>Responsive</h3>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 bg-color-blue text-white">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde amet
+          fugiat tempora mollitia magnam qui, modi iste quo culpa beatae
+          provident ullam quaerat nulla aliquid ipsam reprehenderit natus
+          incidunt inventore!
+        </div>
+        <div class="col-md-6 col-lg-3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde amet
+          fugiat tempora mollitia magnam qui, modi iste quo culpa beatae
+          provident ullam quaerat nulla aliquid ipsam reprehenderit natus
+          incidunt inventore!
+        </div>
+        <div class="col-md-6 col-lg-3 bg-color-red text-white">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde amet
+          fugiat tempora mollitia magnam qui, modi iste quo culpa beatae
+          provident ullam quaerat nulla aliquid ipsam reprehenderit natus
+          incidunt inventore!
+        </div>
+        <div class="col-md-6 col-lg-3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde amet
+          fugiat tempora mollitia magnam qui, modi iste quo culpa beatae
+          provident ullam quaerat nulla aliquid ipsam reprehenderit natus
+          incidunt inventore!
+        </div>
+      </div>
+
+      <h3>Left/Main</h3>
+      <div class="row">
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+          laboriosam nostrum ea, praesentium aperiam alias saepe, et itaque
+          velit voluptatem officiis minima, distinctio adipisci quia facere
+          deserunt omnis soluta iste?
+        </div>
+        <div class="col-8">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+          laboriosam nostrum ea, praesentium aperiam alias saepe, et itaque
+          velit voluptatem officiis minima, distinctio adipisci quia facere
+          deserunt omnis soluta iste?
+        </div>
+      </div>
+
+      <h3>Left/Center/Right</h3>
+      <div class="row">
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          debitis esse temporibus maiores odio ratione accusamus tempore velit
+          modi recusandae? Modi debitis impedit odit aperiam ad quisquam vitae
+          saepe nisi.
+        </div>
+        <div class="col-8">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          debitis esse temporibus maiores odio ratione accusamus tempore velit
+          modi recusandae? Modi debitis impedit odit aperiam ad quisquam vitae
+          saepe nisi.
+        </div>
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          debitis esse temporibus maiores odio ratione accusamus tempore velit
+          modi recusandae? Modi debitis impedit odit aperiam ad quisquam vitae
+          saepe nisi.
+        </div>
+      </div>
+
+      <h1>CSS Labs</h1>
+      <h2>Float</h2>
+      <div>
+        <div class="float-left dimension-portrait bg-color-yellow">Yellow</div>
+        <div class="float-left dimension-portrait bg-color-blue fg-color-white">
+          Blue
+        </div>
+        <div class="float-left dimension-portrait bg-color-red">Red</div>
+
+        <img
+          class="float-left"
+          width="50px"
+          src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"
+        />
+        <div class="float-done"></div>
+
+        <h2>Grid layout</h2>
+        <div class="grid-row">
+          <div class="grid-col-half-page bg-color-yellow">
+            <h3>Left half</h3>
+          </div>
+          <div class="grid-col-half-page bg-color-blue fg-color-white">
+            <h3>Right half</h3>
+          </div>
+        </div>
+
+        <div class="grid-row">
+          <div class="grid-col-third-page bg-color-green fg-color-white">
+            <h3>Left third</h3>
+          </div>
+          <div class="grid-col-two-thirds-page bg-color-red fg-color-white">
+            <h3>Right two thirds</h3>
+          </div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-col-left-sidebar bg-color-yellow">
+            <h3>Side bar</h3>
+            <p>This is the left sidebar</p>
+          </div>
+          <div class="grid-col-main-content bg-color-blue fg-color-white">
+            <h3>Main content</h3>
+            <p>
+              This is the main content. This is the main content. This is the
+              main content.
+            </p>
+          </div>
+          <div class="grid-col-right-sidebar bg-color-green fg-color-white">
+            <h3>Side bar</h3>
+            <p>This is the right sidebar</p>
+          </div>
         </div>
       </div>
     </div>

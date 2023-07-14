@@ -103,3 +103,16 @@
   width: 20%;
   float: left;
 }
+
+.form-control {
+  border-radius: 0px;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.btn-primary {
+  background-color: #3352b7;
+  border-color: #652ea4;
+}
