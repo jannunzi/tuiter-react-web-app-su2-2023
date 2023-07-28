@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Explore from "./explore";
 import Home from "./home";
 import Navigation from "./nav";
+import Todos from "./todos";
 
 function Tuiter() {
   return (
@@ -17,6 +18,7 @@ function Tuiter() {
             <Route path="/" element={<Navigate to="home" />} />
             <Route path="home" element={<Home />} />
             <Route path="explore" element={<Explore />} />
+            <Route path="todos" element={<Todos />} />
           </Routes>
         </div>
       </div>

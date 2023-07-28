@@ -13,21 +13,26 @@ import {
 import Lab3 from "./labs/lab3";
 import Lab4 from "./labs/lab4";
 
+import store from "./store";
+import { Provider } from "react-redux";
+
 function App() {
   const show = "labs";
   return (
-    <div className="container">
-      <HashRouter>
-        <Link to="hello">Hello World</Link> | <Link to="labs">Labs</Link> |
-        <Link to="tuiter">Tuiter</Link>
-        <Routes>
-          <Route path="/" element={<Navigate to={"/labs"} />} />
-          <Route path="/hello" element={<h1>Hello World</h1>} />
-          <Route path="/labs/*" element={<Labs />} />
-          <Route path="/tuiter/*" element={<Tuiter />} />
-        </Routes>
-      </HashRouter>
-    </div>
+    <Provider store={store}>
+      <div className="container">
+        <HashRouter>
+          <Link to="hello">Hello World</Link> | <Link to="labs">Labs</Link> |
+          <Link to="tuiter">Tuiter</Link>
+          <Routes>
+            <Route path="/" element={<Navigate to={"/labs"} />} />
+            <Route path="/hello" element={<h1>Hello World</h1>} />
+            <Route path="/labs/*" element={<Labs />} />
+            <Route path="/tuiter/*" element={<Tuiter />} />
+          </Routes>
+        </HashRouter>
+      </div>
+    </Provider>
   );
 }
 

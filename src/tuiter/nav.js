@@ -9,7 +9,15 @@ function Navigation() {
   const screen = pathElements[2];
   console.log(screen);
 
-  const screens = ["home", "explore", "bookmarks", "lists", "profile", "more"];
+  const screens = [
+    "home",
+    "explore",
+    "bookmarks",
+    "lists",
+    "profile",
+    "todos",
+    "more",
+  ];
 
   return (
     <div className="list-group">
