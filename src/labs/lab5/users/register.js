@@ -16,7 +16,7 @@ function Register() {
     e.preventDefault();
     // const newUser = await register(user);
     await dispatch(registerThunk(user));
-    navigate("/labs/lab5/profile");
+    navigate("/project/profile");
     // console.log(newUser);
     // setUser(newUser);
   };

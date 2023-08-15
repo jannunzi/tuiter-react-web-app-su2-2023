@@ -16,7 +16,7 @@ function Login() {
     e.preventDefault();
     // const currentUser = await login(user);
     await dispatch(loginThunk(user));
-    navigate("/labs/lab5/profile");
+    navigate("/project/profile");
     // console.log(currentUser);
     // setUser(currentUser);
   };

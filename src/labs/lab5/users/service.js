@@ -62,6 +62,11 @@ export const updateUser = async (newUser) => {
   return response.data;
 };
 
+export const getUsersWithRole = async (role) => {
+  const response = await axios.get(`${USERS_API}?role=${role}`);
+  return response.data;
+};
+
 export const getUsers = async () => {
   const response = await axios.get(USERS_API);
   return response.data;

@@ -15,6 +15,8 @@ import Lab4 from "./labs/lab4";
 
 import store from "./store";
 import { Provider } from "react-redux";
+import Canvas from "./canvas";
+import Project from "./project";
 
 function App() {
   const show = "labs";
@@ -23,12 +25,15 @@ function App() {
       <div className="container">
         <HashRouter>
           <Link to="hello">Hello World</Link> | <Link to="labs">Labs</Link> |
-          <Link to="tuiter">Tuiter</Link>
+          <Link to="tuiter">Tuiter</Link> | <Link to="canvas">Canvas</Link> |
+          <Link to="project">Project</Link>
           <Routes>
             <Route path="/" element={<Navigate to={"/labs"} />} />
             <Route path="/hello" element={<h1>Hello World</h1>} />
             <Route path="/labs/*" element={<Labs />} />
             <Route path="/tuiter/*" element={<Tuiter />} />
+            <Route path="/canvas/*" element={<Canvas />} />
+            <Route path="/project/*" element={<Project />} />
           </Routes>
         </HashRouter>
       </div>

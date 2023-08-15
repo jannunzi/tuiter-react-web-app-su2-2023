@@ -21,7 +21,7 @@ function Profile() {
   const handleLogout = async () => {
     // await logout();
     await dispatch(logoutThunk());
-    navigate("/labs/lab5/login");
+    navigate("/project/login");
   };
 
   return (
