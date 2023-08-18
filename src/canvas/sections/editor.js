@@ -5,7 +5,7 @@ import StudentEnrollments from "../enrollments/student";
 import { Link } from "react-router-dom";
 
 function SectionEditor() {
-  const [section, setSection] = useState({}); // [1, 2, 3
+  const [section, setSection] = useState({});
   const { courseId, sectionId } = useParams();
 
   const loadSection = async () => {

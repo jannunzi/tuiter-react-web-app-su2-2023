@@ -1,7 +1,7 @@
-import Users from "./users";
-import Register from "./users/register";
-import Login from "./users/login";
-import Profile from "./users/profile";
+import Users from "../../users";
+import Register from "../../users/register";
+import Login from "../../users/login";
+import Profile from "../../users/profile";
 import { Link } from "react-router-dom";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";

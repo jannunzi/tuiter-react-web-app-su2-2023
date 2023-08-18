@@ -76,4 +76,28 @@ export const getUsers = async () => {
   //     return response.data;
   //   });
 };
-export const getUserById = () => {};
+export const getUserById = async (userId) => {
+  const response = await axios.get(`${USERS_API}/${userId}`);
+  return response.data;
+};
+
+export const userFollowsAnotherUser = async (followed) => {
+  const response = await api.post(
+    `http://localhost:4000/api/follow/${followed}`
+  );
+  return response.data;
+};
+
+export const getFollowedUsers = async (follower) => {
+  const response = await api.get(
+    `http://localhost:4000/api/users/${follower}/followed`
+  );
+  return response.data;
+};
+
+export const getFollowerUsers = async (followed) => {
+  const response = await api.get(
+    `http://localhost:4000/api/users/${followed}/followers`
+  );
+  return response.data;
+};

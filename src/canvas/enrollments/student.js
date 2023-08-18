@@ -1,7 +1,8 @@
-import * as studentService from "../../labs/lab5/users/service";
+import * as studentService from "../../users/service";
 import * as enrollmentService from "./service";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function StudentEnrollments() {
   const { sectionId } = useParams();
@@ -39,23 +40,32 @@ function StudentEnrollments() {
   return (
     <div>
       <h3>Students</h3>
-      <button onClick={handleEnroll} className="btn btn-success float-end">
-        Enroll
-      </button>
-      <select
-        onChange={(e) => setSelectedStudent(e.target.value)}
-        className="form-control w-75"
-      >
-        {students.map((student) => (
-          <option key={student._id} value={student._id}>
-            {student.username}
-          </option>
-        ))}
-      </select>
+      <div className="mb-2">
+        <button onClick={handleEnroll} className="btn btn-success float-end">
+          Enroll
+        </button>
+        <select
+          onChange={(e) => setSelectedStudent(e.target.value)}
+          className="form-control w-75"
+        >
+          {students.map((student) => (
+            <option key={student._id} value={student._id}>
+              {student.username}
+            </option>
+          ))}
+        </select>
+      </div>
       <ul className="list-group">
         {enrollments.map((enrollment) => (
           <li key={enrollment._id} className="list-group-item">
-            {enrollment.student.username}
+            <button className="btn btn-danger float-end">Unenroll</button>
+            <button className="btn btn-warning float-end me-2">Edit</button>
+            <div className="mt-1">
+              <Link to={`/canvas/users/${enrollment.student._id}`}>
+                {enrollment.student.firstName} {enrollment.student.lastName} (
+                {enrollment.student.username})
+              </Link>
+            </div>
           </li>
         ))}
       </ul>

@@ -16,6 +16,20 @@ export const userLikesAlbum = async (albumId, album) => {
   return response.data;
 };
 
+export const getLikesForUser = async (userId) => {
+  const response = await request.get(
+    `http://localhost:4000/api/users/${userId}/likes`
+  );
+  return response.data;
+};
+
+export const getLikesForAlbum = async (albumId) => {
+  const response = await request.get(
+    `http://localhost:4000/api/albums/${albumId}/likes`
+  );
+  return response.data;
+};
+
 export const fullSearch = async (query) => {
   const response = await axios.get(`${NAPSTER_SEARCH_API}&query=${query}`);
   return response.data;

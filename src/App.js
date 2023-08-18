@@ -22,7 +22,7 @@ function App() {
   const show = "labs";
   return (
     <Provider store={store}>
-      <div className="container">
+      <div className="container-fluid">
         <HashRouter>
           <Link to="hello">Hello World</Link> | <Link to="labs">Labs</Link> |
           <Link to="tuiter">Tuiter</Link> | <Link to="canvas">Canvas</Link> |

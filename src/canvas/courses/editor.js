@@ -28,7 +28,7 @@ function CourseEditor() {
       <h2>
         Course: {course.title}
         <Link className="btn btn-danger float-end" to="/canvas">
-          &times;
+          Close
         </Link>
       </h2>
       <hr />
@@ -46,7 +46,7 @@ function CourseEditor() {
             type="text"
             className="form-control w-75"
             onChange={(e) => setCourse({ ...course, title: e.target.value })}
-            value={course.title}
+            defaultValue={course.title}
           />
         </div>
       </div>
